@@ -31,7 +31,6 @@ public class TestBase {
         Configuration.browser = System.getProperty("browser", "chrome");
         Configuration.remote = "https://" + config.login() + ":" + config.password() +
                 "@" + System.getProperty("remote");
-        //"https://user1:1234@selenoid.autotests.cloud/wd/hub";
     }
 
     @AfterEach
